@@ -1,4 +1,4 @@
-# 💼📁 Portfólio - Julia Sales
+# 🗃🗂📁 Portfólio - Julia Sales
 
 Este repositório contém meu portfólio pessoal, desenvolvido com foco em apresentar de forma clara minhas habilidades, projetos e trajetória profissional.
 
