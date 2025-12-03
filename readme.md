@@ -1,4 +1,4 @@
-# 🗃🗂📁 Portfólio - Julia Sales
+# 🗃 Portfólio - Julia Sales
 
 Este repositório contém meu portfólio pessoal, desenvolvido com foco em apresentar de forma clara minhas habilidades, projetos e trajetória profissional.
 
@@ -30,14 +30,10 @@ Projetos destacados dentro do portfólio incluem também:
 ---
 
 ## 🚀 Acesse o portfólio
-🔗 [Clique aqui para visualizar meu portfólio online](https://jsales25.github.io/portfolio/)  
+🔗 [Clique aqui para visualizar meu portfólio online](https://jsales25.github.io/new-portfolio/)  
 
 ---
 
 ## 📫 Contato 
 - 💼 [LinkedIn](https://www.linkedin.com/in/julia-sales-developer/)  
-- 🐙 [GitHub](https://github.com/jsales25)  
-
----
-
-✨ *Portfólio criado com dedicação para apresentar minha jornada e evolução na área de tecnologia.*
+- 🐙 [GitHub](https://github.com/jsales25)
