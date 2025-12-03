@@ -23,9 +23,8 @@ O objetivo é servir como **vitrine profissional**, centralizando minhas experi�
 
 Projetos destacados dentro do portfólio incluem também:
 - **JavaScript**  
-- **Automação com N8N**
-- **Integração com APIs**   
-- **Integração com Inteligência Artificial** 
+- **Automação com N8N**  
+- **Integrações com Inteligência Artificial e APIs**  
 
 ---
 
