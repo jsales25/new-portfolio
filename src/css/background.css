@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #1a0033;
+  position: relative;
+}
+.gradient-blob {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(70px);
+  z-index: -1;
+  animation: blob-move 20s ease-in-out infinite alternate;
+  width: 60vmin;
+  height: 60vmin;
+}
+.blob1 {
+  top: 10%;
+  left: 5%;
+  background: radial-gradient(
+    circle at center,
+    rgba(138, 43, 226, 0.6) 0%,
+    rgba(75, 0, 130, 0.4) 70%,
+    transparent 100%
+  );
+  animation-duration: 18s;
+  transform: scale(0.9);
+}
+.blob2 {
+  bottom: 15%;
+  right: 10%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 0, 200, 0.7) 0%,
+    rgba(100, 0, 100, 0.5) 70%,
+    transparent 100%
+  );
+  animation-duration: 22s;
+  transform: scale(1.1);
+}
+.blob3 {
+  top: 30%;
+  left: 40%;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 200, 200, 0.6) 0%,
+    rgba(0, 100, 100, 0.4) 70%,
+    transparent 100%
+  );
+  animation-duration: 25s;
+  transform: scale(0.8);
+}
+@keyframes blob-move {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(15vw, 10vh) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-10vw, 20vh) scale(0.95);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translate(20vw, -15vh) scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 0) scale(0.9);
+    opacity: 0.6;
+  }
+}
