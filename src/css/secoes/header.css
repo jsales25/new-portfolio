@@ -129,7 +129,7 @@
 
    .header nav ul {
         display: none;        
-        background-color: var(--cor-fundo-principal);        
+        background-color: var(--cor-fundo-header-nav);        
         padding: 20px;     
         border-radius: 20% 0; 
         border: 1px solid var(--cor-borda-header); 
