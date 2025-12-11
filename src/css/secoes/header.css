@@ -66,6 +66,27 @@
     transition: 0.5s ease-in-out;
 }
 
+/* hover no ícone do menu (três linhas) */
+.header nav label:hover .hamburguer,
+.header nav label:hover .hamburguer:before,
+.header nav label:hover .hamburguer:after {
+  background-color: var(--cor-primaria);
+}
+
+/* quando o menu estiver aberto (input checked) manter a cor primária */
+.header input:checked ~ label .hamburguer,
+.header input:checked ~ label .hamburguer:before,
+.header input:checked ~ label .hamburguer:after {
+  background-color: var(--cor-primaria);
+}
+
+/* transição mais suave da cor */
+.header .hamburguer,
+.header .hamburguer:before,
+.header .hamburguer:after {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
 .header .hamburguer:before,
 .header .hamburguer:after {
     background-color: var(--cor-branca);
