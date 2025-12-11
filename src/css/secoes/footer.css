@@ -2,7 +2,6 @@
 .footer {
     margin-top: 7rem;
     text-align: center;
-    background-color: var(--cor-fundo-cinza-claro);
 }
 
 .footer .container {
@@ -36,7 +35,6 @@
 }
 
 .footer nav ul li a:hover {
-    font-weight: 700;
     color: var(--cor-primaria);
 }
 

@@ -1,8 +1,10 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
+html {
+  min-height: 100vh;
   background-color: #1a0033;
+  position: relative;
+}
+body {
+  margin: 0;
   position: relative;
 }
 .gradient-blob {
