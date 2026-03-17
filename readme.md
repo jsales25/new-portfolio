@@ -43,9 +43,9 @@ Projetos destacados dentro do portfólio incluem também:
 
 **Julia Sales**
 
-- **GitHub:** [Acesse o GitHub da autora aqui](https://github.com/jsales25)
-- **Frontend Mentor:** [Acesse o Frontend Mentor da autora aqui](https://www.frontendmentor.io/profile/jsales25)
-- **LinkedIn:** [Acesse o LinkedIn da autora aqui](https://www.linkedin.com/in/julia-sales-developer/)
+- **GitHub:** [Acesse o GitHub da Julia Sales aqui](https://github.com/jsales25)
+- **Frontend Mentor:** [Acesse o Frontend Mentor da Julia Sales aqui](https://www.frontendmentor.io/profile/jsales25)
+- **LinkedIn:** [Acesse o LinkedIn da Julia Sales aqui](https://www.linkedin.com/in/julia-sales-developer/)
 
 ---
 
