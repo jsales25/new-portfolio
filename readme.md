@@ -17,6 +17,17 @@ O objetivo é servir como **vitrine profissional**, centralizando minhas experi�
 
 ---
 
+### Screenshot
+
+![Design do projeto](./src/design/portfolio-desktop-design.png)
+
+### Links
+
+- Solução no Repositório: [Acesse o repositório do meu Portfólio aqui](https://github.com/jsales25/new-portfolio.git)
+- Live Site: [Acesse o meu Portfólio aqui](https://jsales25.github.io/new-portfolio/)
+
+---
+
 ## 🛠️ Tecnologias utilizadas
 - **HTML5**  
 - **CSS3**  
@@ -28,12 +39,16 @@ Projetos destacados dentro do portfólio incluem também:
 - **Integrações com Inteligência Artificial**  
 
 ---
+## 📫 Contato 
 
-## 🚀 Acesse o portfólio
-🔗 [Clique aqui para visualizar meu portfólio online](https://jsales25.github.io/new-portfolio/)  
+**Julia Sales**
+
+- **GitHub:** [Acesse o GitHub da autora aqui](https://github.com/jsales25)
+- **Frontend Mentor:** [Acesse o Frontend Mentor da autora aqui](https://www.frontendmentor.io/profile/jsales25)
+- **LinkedIn:** [Acesse o LinkedIn da autora aqui](https://www.linkedin.com/in/julia-sales-developer/)
 
 ---
 
-## 📫 Contato 
-- 💼 [LinkedIn](https://www.linkedin.com/in/julia-sales-developer/)  
-- 🐙 [GitHub](https://github.com/jsales25)
+<div align="center">
+  Feito com 💜 por Julia Sales
+</div>
