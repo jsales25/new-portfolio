@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="src/css/secoes/projetos.css" />
     <link rel="stylesheet" href="src/css/secoes/footer.css" />
 
+    <script src="./src/js/carrossel-habilidades.js" defer></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -127,21 +129,45 @@
           <div class="informacoes-sobre-mim">
             <p>
               <strong
-                >Olá! Sou a Julia Sales, formada em Direito e Desenvolvedora Full Stack Júnior, fiz uma transição de carreira para a área de tecnologia, setor pelo qual sou profundamente apaixonada.</strong
+                >Olá! Sou a Julia Sales, formada em Direito e Desenvolvedora
+                Full Stack Júnior, fiz uma transição de carreira para a área de
+                tecnologia, setor pelo qual sou profundamente
+                apaixonada.</strong
               >
-              Concluí uma formação completa em Desenvolvimento Full Stack, adquirindo experiência prática no desenvolvimento de aplicações web utilizando JavaScript, TypeScript, React, Next.js, Node.js, Express, PostgreSQL, Prisma, Supabase, Docker, dentre outros. Também possuo experiência na criação e consumo de APIs REST, modelagem de banco de dados, autenticação, deploy de aplicações e integração com serviços em nuvem.
+              Concluí uma formação completa em Desenvolvimento Full Stack,
+              adquirindo experiência prática no desenvolvimento de aplicações
+              web utilizando JavaScript, TypeScript, React, Next.js, Node.js,
+              Express, PostgreSQL, Prisma, Supabase, Docker, dentre outros.
+              Também possuo experiência na criação e consumo de APIs REST,
+              modelagem de banco de dados, autenticação, deploy de aplicações e
+              integração com serviços em nuvem.
             </p>
 
             <p>
-              Atualmente, venho ampliando meus conhecimentos em Inteligência Artificial e automações, desenvolvendo soluções com <strong>n8n</strong> e integrando aplicações com os modelos da <strong>OpenAI</strong> e <strong>Google Gemini</strong>. Busco constantemente aprender novas tecnologias e boas práticas para construir aplicações modernas, escaláveis, performáticas e que proporcionem uma excelente experiência ao usuário.
+              Atualmente, venho ampliando meus conhecimentos em Inteligência
+              Artificial e automações, desenvolvendo soluções com
+              <strong>n8n</strong> e integrando aplicações com os modelos da
+              <strong>OpenAI</strong> e <strong>Google Gemini</strong>. Busco
+              constantemente aprender novas tecnologias e boas práticas para
+              construir aplicações modernas, escaláveis, performáticas e que
+              proporcionem uma excelente experiência ao usuário.
             </p>
 
             <p>
-              Sou uma pessoa criativa, analítica, detalhista e muito comprometida com a qualidade dos projetos que desenvolvo. Minha experiência anterior na área jurídica fortaleceu habilidades como organização, pensamento crítico, resolução de problemas e atenção aos detalhes, competências que hoje aplico no desenvolvimento de software.
+              Sou uma pessoa criativa, analítica, detalhista e muito
+              comprometida com a qualidade dos projetos que desenvolvo. Minha
+              experiência anterior na área jurídica fortaleceu habilidades como
+              organização, pensamento crítico, resolução de problemas e atenção
+              aos detalhes, competências que hoje aplico no desenvolvimento de
+              software.
             </p>
 
             <p>
-              Fora do mundo do código, gosto de teatro, filmes, videogames, viagens, contato com a natureza, investimentos e experiências artísticas e culturais, interesses que também contribuem para minha criatividade e visão no desenvolvimento de soluções tecnológicas.
+              Fora do mundo do código, gosto de teatro, filmes, videogames,
+              viagens, contato com a natureza, investimentos e experiências
+              artísticas e culturais, interesses que também contribuem para
+              minha criatividade e visão no desenvolvimento de soluções
+              tecnológicas.
             </p>
 
             <div class="botoes">
@@ -165,108 +191,182 @@
           </div>
         </div>
 
-        <div class="container-habilidades">
-          <div class="informacoes html">
-            <div class="logo">
-              <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
-            </div>
-            <h3>HTML5</h3>
-            <p>
-              Utilizo HTML5 para estruturar páginas de forma semântica,
-              organizada e acessível. Tenho atenção aos elementos corretos para
-              melhorar SEO, acessibilidade e desempenho, garantindo uma base
-              sólida para qualquer projeto web. Busco sempre aplicar boas
-              práticas e padrões modernos no desenvolvimento.
-            </p>
+        <div
+          class="carrossel-habilidades"
+          data-carrossel-habilidades
+          tabindex="0"
+        >
+          <div
+            class="carrossel-controles"
+            aria-label="Controles do carrossel de habilidades"
+          >
+            <button
+              class="carrossel-botao carrossel-botao-anterior"
+              type="button"
+              aria-label="Voltar para habilidades anteriores"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="carrossel-botao carrossel-botao-proximo"
+              type="button"
+              aria-label="Avançar para próximas habilidades"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
 
-          <div class="informacoes css">
-            <div class="logo">
-              <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          <div class="carrossel-viewport">
+            <div class="carrossel-track">
+              <div class="informacoes html">
+                <div class="logo">
+                  <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+                </div>
+                <h3>HTML5</h3>
+                <p>
+                  Utilizo HTML5 para estruturar páginas de forma semântica,
+                  organizada e acessível. Tenho atenção aos elementos corretos
+                  para melhorar SEO, acessibilidade e desempenho, garantindo uma
+                  base sólida para qualquer projeto web. Busco sempre aplicar
+                  boas práticas e padrões modernos no desenvolvimento.
+                </p>
+              </div>
+
+              <div class="informacoes css">
+                <div class="logo">
+                  <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+                </div>
+                <h3>CSS3</h3>
+                <p>
+                  Com CSS3, sou capaz de criar estilos personalizados,
+                  responsivos e visualmente atrativos. Trabalho com
+                  posicionamento, animações e transições para deixar as
+                  interfaces mais fluidas e dinâmicas. Também foco em boas
+                  práticas de design, proporcionando uma experiência agradável
+                  para o usuário.
+                </p>
+              </div>
+
+              <div class="informacoes javascript">
+                <div class="logo">
+                  <i
+                    class="devicon devicon-javascript-plain"
+                    id="javascript"
+                  ></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>
+                  Utilizo JavaScript para desenvolvimento de interfaces
+                  dinâmicas e interativas em páginas web. Trabalho com
+                  manipulação do DOM, eventos, condicionais, loops, lógica de
+                  programação, dentre outras, visando desenvolver código
+                  organizado e reutilizável, melhorando a experiência do usuário
+                  nas aplicações web.
+                </p>
+              </div>
+
+              <div class="informacoes typescript">
+                <div class="logo">
+                  <i
+                    class="devicon devicon-typescript-plain"
+                    id="typescript"
+                  ></i>
+                </div>
+                <h3>TypeScript</h3>
+                <p>
+                  Possuo conhecimentos em TypeScript, utilizando tipagem
+                  estática para tornar o código mais seguro e organizado.
+                  Trabalho com tipagem de funções, objetos e parâmetros, uso de
+                  interfaces, type aliases, unions e generics. Também trabalho
+                  com import/export de módulos e configuração do projeto através
+                  do tsconfig.
+                </p>
+              </div>
+
+              <div class="informacoes react">
+                <div class="logo">
+                  <i class="devicon devicon-react-original" id="react"></i>
+                </div>
+                <h3>React</h3>
+                <p>
+                  Tenho conhecimentos em React, criando projetos com Vite e
+                  TypeScript. Trabalho com componentes funcionais, JSX/TSX,
+                  props, renderização condicional, listas, eventos e diferentes
+                  formas de estilização. Utilizo Hooks, Context API e Hooks
+                  customizados para gerenciar estado, lógica e compartilhamento
+                  de dados.
+                </p>
+              </div>
+
+              <div class="informacoes next">
+                <div class="logo">
+                  <i class="devicon-nextjs-plain" id="next"></i>
+                </div>
+                <h3>Next.JS</h3>
+                <p>
+                  Possuo conhecimentos em Next.js para desenvolvimento de
+                  aplicações React modernas e otimizadas. Tenho familiaridade
+                  com roteamento, renderização de páginas, componentização e
+                  integração com APIs. Também compreendo conceitos importantes
+                  como SSR (Server-Side Rendering), SSG (Static Site Generation)
+                  e organização de projetos voltados para performance e
+                  escalabilidade.
+                </p>
+              </div>
+
+              <div class="informacoes tailwindcss">
+                <div class="logo">
+                  <i
+                    class="devicon devicon-tailwindcss-original"
+                    id="tailwindcss"
+                  ></i>
+                </div>
+                <h3>TailwindCSS</h3>
+                <p>
+                  Utilizo TailwindCSS para estilização de interfaces modernas e
+                  responsivas, realizando sua instalação e configuração em
+                  projetos com Vite e React. Tenho familiaridade com o sistema
+                  de espaçamento, classes utilitárias e composição de estilos
+                  diretamente no HTML/JSX/TSX. O uso do Tailwind me permite
+                  criar layouts consistentes, ágeis e visualmente organizados,
+                  mantendo produtividade e padrão visual nos projetos.
+                </p>
+              </div>
+
+              <div class="informacoes github">
+                <div class="logo">
+                  <i class="devicon devicon-github-original" id="github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>
+                  Uso o GitHub para hospedagem, versionamento e compartilhamento
+                  de projetos. Trabalho com a criação de repositórios, fluxo de
+                  trabalho com Git, organização de código e publicação de
+                  projetos, facilitando colaboração e acompanhamento do
+                  desenvolvimento.
+                </p>
+              </div>
+
+              <div class="informacoes git">
+                <div class="logo">
+                  <i class="devicon devicon-git-plain" id="git"></i>
+                </div>
+                <h3>Git</h3>
+                <p>
+                  Utilizo Git para controle de versão e organização do
+                  desenvolvimento. Trabalho com commits, branches, resolução de
+                  conflitos de merge e acompanhamento do histórico de
+                  alterações, garantindo segurança e controle durante a evolução
+                  dos projetos.
+                </p>
+              </div>
             </div>
-            <h3>CSS3</h3>
-            <p>
-              Com CSS3, sou capaz de criar estilos personalizados, responsivos e
-              visualmente atrativos. Trabalho com posicionamento, animações e
-              transições para deixar as interfaces mais fluidas e dinâmicas.
-              Também foco em boas práticas de design, proporcionando uma
-              experiência agradável para o usuário.
-            </p>
           </div>
 
-          <div class="informacoes javascript">
-            <div class="logo">
-              <i class="devicon devicon-javascript-plain" id="javascript"></i>
-            </div>
-            <h3>JavaScript</h3>
-            <p>
-              Utilizo JavaScript para desenvolvimento de interfaces dinâmicas e interativas em páginas web. Trabalho com manipulação do DOM, eventos, condicionais, loops, lógica de programação, dentre outras, visando desenvolver código organizado e reutilizável, melhorando a experiência do usuário nas aplicações web.
-            </p>
-          </div>
-
-          <div class="informacoes typescript">
-            <div class="logo">
-              <i class="devicon devicon-typescript-plain" id="typescript"></i>
-            </div>
-            <h3>TypeScript</h3>
-            <p>
-              Possuo conhecimentos em TypeScript, utilizando tipagem estática para tornar o código mais seguro e organizado. Trabalho com tipagem de funções, objetos e parâmetros, uso de interfaces, type aliases, unions e generics. Também trabalho com import/export de módulos e configuração do projeto através do tsconfig.
-            </p>
-          </div>
-
-          <div class="informacoes react">
-            <div class="logo">
-              <i class="devicon devicon-react-original" id="react"></i>
-            </div>
-            <h3>React</h3>
-            <p>
-              Tenho conhecimentos em React, criando projetos com Vite e TypeScript. Trabalho com componentes funcionais, JSX/TSX, props, renderização condicional, listas, eventos e diferentes formas de estilização. Utilizo Hooks, Context API e Hooks customizados para gerenciar estado, lógica e compartilhamento de dados.
-            </p>
-          </div>
-
-          <div class="informacoes next">
-            <div class="logo"> 
-            <i class="devicon-nextjs-plain" id="next"></i>
-            </div>
-            <h3>Next.JS</h3>
-            <p>
-              Possuo conhecimentos em Next.js para desenvolvimento de aplicações React modernas e otimizadas. Tenho familiaridade com roteamento, renderização de páginas, componentização e integração com APIs. Também compreendo conceitos importantes como SSR (Server-Side Rendering), SSG (Static Site Generation) e organização de projetos voltados para performance e escalabilidade.
-            </p>
-          </div>
-
-          <div class="informacoes tailwindcss">
-            <div class="logo">
-              <i
-                class="devicon devicon-tailwindcss-original"
-                id="tailwindcss"
-              ></i>
-            </div>
-            <h3>TailwindCSS</h3>
-            <p>
-              Utilizo TailwindCSS para estilização de interfaces modernas e responsivas, realizando sua instalação e configuração em projetos
-              com Vite e React. Tenho familiaridade com o sistema de espaçamento, classes utilitárias e composição de estilos diretamente no HTML/JSX/TSX. O uso do Tailwind me permite criar layouts consistentes, ágeis e visualmente organizados, mantendo produtividade e padrão visual nos projetos.
-            </p>
-          </div>
-
-          <div class="informacoes github">
-            <div class="logo">
-              <i class="devicon devicon-github-original" id="github"></i>
-            </div>
-            <h3>GitHub</h3>
-            <p>
-              Uso o GitHub para hospedagem, versionamento e compartilhamento de projetos. Trabalho com a criação de repositórios, fluxo de trabalho com Git, organização de código e publicação de projetos, facilitando colaboração e acompanhamento do desenvolvimento.
-            </p>
-          </div>
-
-          <div class="informacoes git">
-            <div class="logo">
-              <i class="devicon devicon-git-plain" id="git"></i>
-            </div>
-            <h3>Git</h3>
-            <p>
-              Utilizo Git para controle de versão e organização do desenvolvimento. Trabalho com commits, branches, resolução de conflitos de merge e acompanhamento do histórico de alterações, garantindo segurança e controle durante a evolução dos projetos.
-            </p>
-          </div>
+          <div
+            class="carrossel-indicadores"
+            aria-label="Indicadores do carrossel"
+          ></div>
         </div>
       </div>
     </section>
@@ -341,10 +441,7 @@
           </div>
 
           <div class="projeto">
-            <a
-              target="_blank"
-              href="https://syntax-wear-app-chi.vercel.app/"
-            >
+            <a target="_blank" href="https://syntax-wear-app-chi.vercel.app/">
               <img
                 src="./src/imagens/projeto-syntax-wear.png"
                 alt="Projeto Landing Page - Dragon Ball"
@@ -352,7 +449,8 @@
               <h3>Projeto 4</h3>
               <div class="informacoes-projeto">
                 <p>
-                  Projeto de um E-Commerce responsivo desenvolvido com React, TypeScript e Tailwind CSS.
+                  Projeto de um E-Commerce responsivo desenvolvido com React,
+                  TypeScript e Tailwind CSS.
                 </p>
                 <p>🔗 Ver Deploy no Vercel</p>
               </div>

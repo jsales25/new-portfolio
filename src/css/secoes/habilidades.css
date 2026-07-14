@@ -1,44 +1,138 @@
 /* HABILIDADES */
-.habilidades .container-habilidades {
-  text-align: center;
+.habilidades .carrossel-habilidades {
+  position: relative;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.habilidades .container-habilidades .informacoes {
+.habilidades .carrossel-controles {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.habilidades .carrossel-botao {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cor-primaria);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.habilidades .carrossel-botao:hover:not(:disabled),
+.habilidades .carrossel-botao:focus-visible:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+.habilidades .carrossel-botao:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.habilidades .carrossel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.habilidades .carrossel-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.habilidades .carrossel-track .informacoes {
+  flex: 0 0
+    calc((100% - ((var(--cards-per-page) - 1) * 24px)) / var(--cards-per-page));
   max-width: 350px;
   padding: 40px 20px;
+  text-align: center;
 }
 
-.habilidades .container-habilidades .informacoes p,
-.habilidades .container-habilidades .informacoes h3,
-.habilidades .container-habilidades .informacoes .logo i {
+.habilidades .carrossel-track .informacoes p,
+.habilidades .carrossel-track .informacoes h3,
+.habilidades .carrossel-track .informacoes .logo i {
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
 
-.habilidades .container-habilidades .informacoes:hover p,
-.habilidades .container-habilidades .informacoes:hover h3,
-.habilidades .container-habilidades .informacoes:hover .logo i {
+.habilidades .carrossel-track .informacoes:hover p,
+.habilidades .carrossel-track .informacoes:hover h3,
+.habilidades .carrossel-track .informacoes:hover .logo i {
   color: var(--cor-primaria);
 }
 
-.habilidades .container-habilidades .informacoes h3 {
+.habilidades .carrossel-track .informacoes h3 {
   font-size: var(--fonte-extra-grande);
   font-weight: 500;
   margin-bottom: 20px;
   color: var(--cor-primaria);
 }
 
-.habilidades .container-habilidades .informacoes p {
+.habilidades .carrossel-track .informacoes p {
   font-size: 1.8rem;
   font-family: var(--fonte-secundaria);
 }
 
-.habilidades .container-habilidades .informacoes .logo i {
+.habilidades .carrossel-track .informacoes .logo i {
   font-size: 8rem;
+}
+
+.habilidades .carrossel-indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.habilidades .carrossel-indicador {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.habilidades .carrossel-indicador.ativo {
+  background: var(--cor-primaria);
+  transform: scale(1.15);
+}
+
+.habilidades .carrossel-indicador:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1023px) {
+  .habilidades .carrossel-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .habilidades .carrossel-controles {
+    justify-content: center;
+  }
+
+  .habilidades .carrossel-track {
+    gap: 16px;
+  }
+
+  .habilidades .carrossel-track .informacoes {
+    padding: 30px 16px;
+  }
 }
