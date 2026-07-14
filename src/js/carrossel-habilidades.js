@@ -1,9 +1,8 @@
-const carrosselHabilidades = document.querySelector(
-  "[data-carrossel-habilidades]",
+const carrossels = Array.from(
+  document.querySelectorAll("[data-carrossel-habilidades]"),
 );
 
-if (carrosselHabilidades) {
-  // Seleciona os elementos principais do carrossel.
+const inicializarCarrossel = (carrosselHabilidades) => {
   const track = carrosselHabilidades.querySelector(".carrossel-track");
   const viewport = carrosselHabilidades.querySelector(".carrossel-viewport");
   const prevButton = carrosselHabilidades.querySelector(
@@ -15,7 +14,22 @@ if (carrosselHabilidades) {
   const indicatorsContainer = carrosselHabilidades.querySelector(
     ".carrossel-indicadores",
   );
+
+  if (
+    !track ||
+    !viewport ||
+    !prevButton ||
+    !nextButton ||
+    !indicatorsContainer
+  ) {
+    return;
+  }
+
   const cards = Array.from(track.children);
+
+  if (cards.length === 0) {
+    return;
+  }
 
   let cardsPerPage = 3;
   let currentPage = 0;
@@ -103,7 +117,8 @@ if (carrosselHabilidades) {
   });
 
   window.addEventListener("resize", atualizarLayout);
-
   window.addEventListener("load", atualizarLayout);
   atualizarLayout();
-}
+};
+
+carrossels.forEach(inicializarCarrossel);
