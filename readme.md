@@ -5,7 +5,7 @@ Este repositório contém meu portfólio pessoal, desenvolvido com foco em apres
 ---
 
 ## 📖 Sobre o projeto
-O portfólio foi construído utilizando **HTML** e **CSS**, com design **responsivo** para garantir boa experiência em diferentes dispositivos.  
+O portfólio foi construído utilizando **HTML**, **CSS** e **JavaScript**, com design **responsivo** para garantir boa experiência em diferentes dispositivos.  
 
 Ele reúne em uma única página:
 - **Resumo sobre mim**  
@@ -31,6 +31,7 @@ O objetivo é servir como **vitrine profissional**, centralizando minhas experi�
 ## 🛠️ Tecnologias utilizadas
 - **HTML5**  
 - **CSS3**  
+- **JavaScript**  
 
 Projetos destacados dentro do portfólio incluem também:
 - **JavaScript**  
@@ -44,7 +45,7 @@ Projetos destacados dentro do portfólio incluem também:
 **Julia Sales**
 
 - **GitHub:** [Acesse o GitHub da Julia Sales aqui](https://github.com/jsales25)
-- **Frontend Mentor:** [Acesse o Frontend Mentor da Julia Sales aqui](https://www.frontendmentor.io/profile/jsales25)
+
 - **LinkedIn:** [Acesse o LinkedIn da Julia Sales aqui](https://www.linkedin.com/in/julia-sales-developer/)
 
 ---
