@@ -42,21 +42,40 @@
 .habilidades .carrossel-viewport {
   overflow: hidden;
   width: 100%;
+  padding: 0 clamp(8px, 2vw, 16px);
+  box-sizing: border-box;
 }
 
 .habilidades .carrossel-track {
   display: flex;
-  gap: 24px;
   transition: transform 0.4s ease;
   will-change: transform;
+  align-items: stretch;
+}
+
+.habilidades .carrossel-track .carrossel-page {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  padding: 0 clamp(8px, 2vw, 16px);
+  box-sizing: border-box;
 }
 
 .habilidades .carrossel-track .informacoes {
   flex: 0 0
     calc((100% - ((var(--cards-per-page) - 1) * 24px)) / var(--cards-per-page));
-  max-width: 350px;
+  max-width: min(100%, 350px);
+  min-width: 0;
+  box-sizing: border-box;
   padding: 40px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-wrap: anywhere;
 }
 
 .habilidades .carrossel-track .informacoes p,
@@ -82,7 +101,7 @@
 }
 
 .habilidades .carrossel-track .informacoes p {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   font-family: var(--fonte-secundaria);
 }
 
@@ -123,7 +142,7 @@
 }
 
 @media (max-width: 1023px) {
-  .habilidades .carrossel-track {
+  .habilidades .carrossel-track .carrossel-page {
     gap: 20px;
   }
 }
@@ -133,11 +152,18 @@
     justify-content: center;
   }
 
-  .habilidades .carrossel-track {
+  .habilidades .carrossel-track .carrossel-page {
     gap: 16px;
   }
 
   .habilidades .carrossel-track .informacoes {
     padding: 30px 16px;
+  }
+
+  .habilidades .carrossel-track .informacoes .logo i,
+  .habilidades .carrossel-track .informacoes .logo-img {
+    font-size: 6rem;
+    width: 70px;
+    height: 70px;
   }
 }

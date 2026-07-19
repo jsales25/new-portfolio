@@ -49,6 +49,22 @@ const inicializarCarrossel = (carrosselHabilidades) => {
     return 1;
   };
 
+  const criarPaginas = () => {
+    const paginas = [];
+
+    for (let index = 0; index < cards.length; index += cardsPerPage) {
+      const pagina = document.createElement("div");
+      pagina.className = "carrossel-page";
+
+      const paginaCards = cards.slice(index, index + cardsPerPage);
+      paginaCards.forEach((card) => pagina.appendChild(card));
+      paginas.push(pagina);
+    }
+
+    track.innerHTML = "";
+    paginas.forEach((pagina) => track.appendChild(pagina));
+  };
+
   const atualizarLayout = () => {
     cardsPerPage = getCardsPerPage();
     track.style.setProperty("--cards-per-page", cardsPerPage);
@@ -59,14 +75,14 @@ const inicializarCarrossel = (carrosselHabilidades) => {
       currentPage = totalPages - 1;
     }
 
+    criarPaginas();
     renderizarIndicadores();
     atualizarPosicao();
     atualizarControles();
   };
 
   const atualizarPosicao = () => {
-    const deslocamento = viewport.clientWidth * currentPage;
-    track.style.transform = `translateX(-${deslocamento}px)`;
+    track.style.transform = `translateX(-${currentPage * 100}%)`;
   };
 
   const atualizarControles = () => {
